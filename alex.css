@@ -1,0 +1,27 @@
+.navbar {
+    display: flex;  
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.page-title {
+    padding: 1rem 10px;
+}
+
+.page-title p {
+    letter-spacing: 0.4em;
+    font-size: 22px;
+    text-align: center;
+}
+
+.page-title h1 {
+    text-align: center;
+    font-size: 116px;
+    font-family: 'Frank Ruhl Libre', serif;
+}
+
+@media only screen and (max-width: 600px) {
+    .page-title h1 {
+        font-size: 60px;
+    }
+}
