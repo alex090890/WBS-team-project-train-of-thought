@@ -424,3 +424,48 @@
 .wbsMain-aside__pick.aside-section {
   border-bottom: none;
 }
+/* nav  */
+.wbsNav-section {
+  padding: 3rem 1rem;
+  font-family: "Roboto";
+  outline: 1px dashed red;
+}
+.wbsNav-container__desktop {
+  display: flex;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  justify-content: center;
+  align-items: center;
+}
+.wbsNav-list {
+  display: flex;
+}
+.wbsNav-item {
+  width: 165px;
+  text-align: center;
+  /* padding-left: 3rem;
+  padding-right: 3rem; */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-left: 1px solid black;
+}
+.wbsNav-link {
+}
+.wbsNav-item__form {
+  width: auto;
+}
+.wbsNav-form {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.wbsNav-input {
+}
+.wbsNav-item__soc {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: auto;
+  border-right: 1px solid black;
+}
+.wbsSoc-item__nav:not(:last-child) {
+  margin-right: 1rem;
+}
