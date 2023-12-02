@@ -426,16 +426,24 @@
 }
 /* nav  */
 .wbsNav-section {
-  padding: 3rem 1rem;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
   font-family: "Roboto";
-  outline: 1px dashed red;
+
+  @media screen and (min-width: 1200px) {
+    padding: 3rem 1rem;
+  }
 }
 .wbsNav-container__desktop {
-  display: flex;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  justify-content: center;
-  align-items: center;
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .wbsNav-list {
   display: flex;
@@ -445,27 +453,87 @@
   text-align: center;
   /* padding-left: 3rem;
   padding-right: 3rem; */
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+
   border-left: 1px solid black;
 }
 .wbsNav-link {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: black;
+  display: block;
+}
+.wbsNav-link:is(:hover, :focus) {
+  color: rgb(102, 0, 234);
+}
+.wbsCurrent-link {
+  color: rgb(102, 0, 234);
 }
 .wbsNav-item__form {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   width: auto;
 }
 .wbsNav-form {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-.wbsNav-input {
-}
-.wbsNav-item__soc {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+.wbsNav-input {
+  outline: 1px solid transparent;
+  border: 1px solid transparent;
+}
+.wbsNav-input:is(:hover, :focus) {
+  -webkit-appearance: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  border: 1px solid transparent;
+  border-bottom: 1px solid black;
+}
+.wbsNav-item__soc {
+  padding: 1rem;
+
   width: auto;
   border-right: 1px solid black;
 }
 .wbsSoc-item__nav:not(:last-child) {
   margin-right: 1rem;
 }
+.wbsNav-container__mobile {
+  /* display: flex; */
+  border-bottom: 1px solid black;
+  /* justify-content: center;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  @media screen and (min-width: 1199px) {
+    display: none;
+  }
+}
+/* .wbsNav-list__mobile {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+} */
+/* .wbsNav-item__mobile {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+} */
+.wbsForm-mob {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-right: 1px solid black;
+}
+
+.wbsNav-btn__mobile {
+  /* padding-top: 1rem;
+  padding-bottom: 1rem; */
+  background-color: white;
+  justify-self: center;
+  align-self: center;
+  height: 30px;
+}
+/* bootstrap */
