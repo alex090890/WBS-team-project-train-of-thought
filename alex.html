@@ -17,48 +17,61 @@
   </head>
   <body>
     <header>
+      <!--Hero image-->
         <div class="page-title">
             <p>EVERYTHING IS PERSONAL. INCLUDING THIS BLOG.</p>
             <h1>Train of Thought</h1>
         </div>
-        <div class="navbar-line">
-          <div class="navbar-left"></div>
-          <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Home</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">My Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit"><img src="./assets-alex/search-interface-symbol.png" alt=""></button>
-            </form>
-            </div>
-            <div class="social-networks">
-              <img class="social-icon" src="./assets-alex/free-icon-facebook-app-symbol-20837 (1).png" alt="Facebook">
-              <img class="social-icon" src="./assets-alex/free-icon-instagram-1384031.png" alt="Instagram">
-              <img class="social-icon" src="./assets-alex/twitter.png" alt="Twitter">
-              <img class="social-icon" src="./assets-alex/pinterest.png" alt="Pinterest">
-          </div>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-xl navbar-light bg-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse show" id="navbarBasic">
+                <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">My Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+                <div class="navbar-big-item navbar-social">
+                <img src="./assets-alex/free-icon-facebook-app-symbol-20837 (1).png" alt="Facebook">
+                <img src="./assets-alex/free-icon-instagram-1384031.png" alt="Instagram">
+                <img src="./assets-alex/twitter.png" alt="Twitter">
+                <img src="./assets-alex/pinterest.png" alt="Pinterest">
+              </div>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit"><img src="./assets-alex/search-interface-symbol.png" alt=""></button>
+                </form>
+              </div>
             </div>
           </nav>
-          
-          <div class="navbar-right"></div>
-        </div>
     </header>
-    <main></main>
+    <main>
+      <!--Never miss a new post-->
+      <div class="never">
+        <div class="nevemiss">
+          <p class="nevermiss-text">Never Miss a New Post</p>
+        </div>
+        <form class="never-subscribe">
+          <fieldset>
+            <legend>Enter your email *</legend>
+            <input type="email" name="never-email" id="never-email">
+            <label for="never-email"><a href="#" class="never-subscribe-button">Subscribe</a></label>
+          </fieldset>
+        </form>
+      </div>
+    </main>
     <footer></footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
