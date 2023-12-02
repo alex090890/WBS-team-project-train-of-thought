@@ -10,9 +10,20 @@
       href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700;900&family=Roboto:wght@100;200;300;400;700;900&display=swap"
       rel="stylesheet"
     />
+     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="anna.css" />
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </head>
    <ul class="worknav">
       <li>
@@ -25,10 +36,11 @@
         <a class="wbsNav__link wbs--current-link" href="./alex.html">Alex</a>
       </li>
     </ul>
+    <!---- nav----->
     <nav class="wbsNav-section">
       <div class="wbsNav-container__desktop">
         <ul class="wbsNav-list">
-         <li class="wbsNav-item"><a class="wbsNav-link" href="">Home</a> </li>
+         <li class="wbsNav-item"><a class="wbsNav-link wbsCurrent-link" href="">Home</a> </li>
          <li class="wbsNav-item"><a class="wbsNav-link" href="">About</a> </li>
          <li class="wbsNav-item"><a class="wbsNav-link" href="">My Blog</a> </li>
          <li class="wbsNav-item"><a class="wbsNav-link" href="">Contact</a> </li>
@@ -81,7 +93,82 @@
        
         
       </div>
+      <div class="wbsNav-container__mobile">
+        <!-- <div class="wbsNav-list__mobile"> -->
+          <!-- <li class="wbsNav-item__mobile">  -->
+            <form class="wbsForm-mob"> 
+               <input class="wbsNav-input" type="text" placeholder="Search..."/>
+              </form>
+          <!-- </li> -->
+          <!-- <li class="wbsNav-item__mobile"> -->
+            <button class="wbsNav-btn__mobile btn btn-primary" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">Click</button>
+           
+          <!-- </li> -->
+        <!-- </div> -->
+       
+       
+      </div>
+       <!-- Modal !!!!!-->
+       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <ul class="wbsNav-list__mob">
+        <li class="wbsNav-item__mob"><a class="wbsNav-link" href="">Home</a> </li>
+         <li class="wbsNav-item__mob"><a class="wbsNav-link" href="">About</a> </li>
+         <li class="wbsNav-item__mob"><a class="wbsNav-link" href="">My Blog</a> </li>
+         <li class="wbsNav-item__mob"><a class="wbsNav-link" href="">Contact</a> </li>
+      </ul>
+       <ul class="wbsSoc-list">
+                <li class="wbsSoc-item__nav">
+                  <a href="">
+                    <svg class="wbsSoc-list__icon" width="20" height="20">
+                      <use
+                        href="./assets/images/anna/icons.svg#icon-facebook"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="wbsSoc-item__nav">
+                  <a href="">
+                    <svg class="wbsSoc-list__icon" width="20" height="20">
+                      <use
+                        href="./assets/images/anna/icons.svg#icon-instagram"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="wbsSoc-item__nav">
+                  <a href="">
+                    <svg class="wbsSoc-list__icon" width="20" height="20">
+                      <use
+                        href="./assets/images/anna/icons.svg#icon-twitter"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="wbsSoc-item_nav">
+                  <a href="">
+                    <svg class="wbsSoc-list__icon" width="20" height="20">
+                      <use
+                        href="./assets/images/anna/icons.svg#icon-pinterest2"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+     <!-- end of Modal !!!!!-->
     </nav>
+    
   <body>
    
     
@@ -420,11 +507,13 @@
       </div>
     </section>
     <!-- End of the Dowm Form -->
+   
     <footer class="wbsFooter">
         <div class="wbsFooter-inner"><p class="wbsForm-text">
         © 2035 by Train of Thoughts. Powered and secured by Wix
       </p></div>
       
     </footer>
+     
   </body>
 </html>
