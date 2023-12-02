@@ -47,6 +47,11 @@
          <li class="wbsNav-item wbsNav-item__form"> 
           <form class="wbsNav-form">
           <input class="wbsNav-input" type="text" placeholder="Search..."/>
+          <svg class="wbsNav-icon" width="18" height="18">
+                      <use
+                        href="./assets/images/anna/icons.svg#icon-search"
+                      ></use>
+                    </svg>
         </form>
       </li>
        <li class="wbsNav-item wbsNav-item__soc"> 
@@ -93,20 +98,26 @@
        
         
       </div>
-      <div class="wbsNav-container__mobile">
-        <!-- <div class="wbsNav-list__mobile"> -->
-          <!-- <li class="wbsNav-item__mobile">  -->
-            <form class="wbsForm-mob"> 
-               <input class="wbsNav-input" type="text" placeholder="Search..."/>
-              </form>
-          <!-- </li> -->
-          <!-- <li class="wbsNav-item__mobile"> -->
-            <button class="wbsNav-btn__mobile btn btn-primary" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">Click</button>
-           
-          <!-- </li> -->
-        <!-- </div> -->
-       
-       
+    </nav>
+    <nav class="wbsNav-section__mobile">
+      <div class="wbsNav-container__mobile">    
+        <form class="wbsForm__mobile">
+          <input class="wbsNav-input wbsNav-input__mobile" type="text" placeholder="Search..."/>
+          <svg class="wbsNav-icon wbsNav-icon__mobile" width="18" height="18">
+            <use
+              href="./assets/images/anna/icons.svg#icon-search">
+            </use>
+          </svg>
+        </form>
+         <!-- btn-primary btn -->
+        <button class="wbsNav-btn__mobile " type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <svg class="wbsNav-icon__open" width="40" height="40">
+            <use
+              href="./assets/images/anna/icons.svg#icon-menu_open_40px">
+            </use>
+          </svg>
+        </button>
+
       </div>
        <!-- Modal !!!!!-->
        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

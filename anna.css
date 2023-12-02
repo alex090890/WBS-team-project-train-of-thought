@@ -469,15 +469,19 @@
   color: rgb(102, 0, 234);
 }
 .wbsNav-item__form {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   width: auto;
 }
 .wbsNav-form {
+  position: relative;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 .wbsNav-input {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
   outline: 1px solid transparent;
   border: 1px solid transparent;
 }
@@ -488,6 +492,12 @@
   border: 1px solid transparent;
   border-bottom: 1px solid black;
 }
+.wbsNav-icon {
+  position: absolute;
+  right: 30px;
+  top: 12px;
+  fill: rgba(24, 24, 24, 0.821);
+}
 .wbsNav-item__soc {
   padding: 1rem;
 
@@ -496,6 +506,8 @@
 }
 .wbsSoc-item__nav:not(:last-child) {
   margin-right: 1rem;
+}
+.wbsNav-section__mobile {
 }
 .wbsNav-container__mobile {
   /* display: flex; */
@@ -511,29 +523,29 @@
     display: none;
   }
 }
-/* .wbsNav-list__mobile {
-  display: grid;
-  grid-template-columns: 80% 20%;
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-} */
-/* .wbsNav-item__mobile {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-} */
-.wbsForm-mob {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border-right: 1px solid black;
-}
 
+.wbsForm__mobile {
+  position: relative;
+
+  border-right: 1px solid black;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.wbsNav-input__mobile {
+  width: 100%;
+}
+.wbsNav-icon__mobile {
+  top: 20px;
+}
 .wbsNav-btn__mobile {
   /* padding-top: 1rem;
   padding-bottom: 1rem; */
   background-color: white;
   justify-self: center;
   align-self: center;
-  height: 30px;
+
+  border-color: transparent;
 }
 /* bootstrap */
