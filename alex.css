@@ -76,7 +76,7 @@ nav {
     border-left: none;
     border-top: none;
     border-right: none;
-    width: 50vw;
+    width: 30vw;
     margin-top:0%;
 }
 
@@ -85,7 +85,7 @@ nav {
     color: white;
     border: none;
     height: 50px;
-    padding: 10px 20px;
+    padding: 10px auto;
     margin-left: 10px;
     margin-top: 10px;
 }
@@ -123,6 +123,7 @@ nav {
 
 .card-title {
     text-transform: capitalize;
+    font-weight: bold;
 }
 
 .card-text {
@@ -144,15 +145,25 @@ nav {
 
  .alex-card-views {
     display: inline-block;
-    color: black;
     margin-right: 20px;
     font-size: 13px;
  }
 
+ .alex-card-comments:hover {
+    color: blue!important;
+ }
+
+ .left-more-posts {
+    border: none;
+    background-color: rgb(102, 0, 234);
+    color: white;
+    display: block;
+    margin: 10px auto;
+    padding: 10px 40px;
+ }
 
 .left-blog-post {
-    width: 500px;
-    height:px;
+    width: 600px;
     border: 1px solid black;
     margin: 30px auto;
     display: grid;
@@ -161,12 +172,25 @@ nav {
 
 .left-blog-image {
     height: 100%;
-    background-image: url('./assets-alex/c22c23_56862fbf994d49a3a136f14547e6194c~mv2_d_1920_1342_s_2.webp');
     background-position: center;
     background-origin:content-box;
     background-repeat: no-repeat;
     background-size:cover;
 }
+
+.left-blog-image:hover {
+    cursor: pointer;
+}
+
+.left-card-link {
+    color: black;
+    text-decoration: none;
+}
+
+.left-card-link:hover {
+    color: blue;
+}
+
 
 /* Media queries*/
 @media only screen and (max-width: 500px) {
@@ -229,42 +253,3 @@ nav {
         margin-bottom: 0px;
     }
 }
-
-/*@media only screen and (max-width: 500px) {
-    .left-blog-post {
-        margin: 30px 10%;
-        display: grid;
-        grid-template-rows: 40% 60%;
-        grid-template-columns: none;
-        width: 250px;
-    }
-
-    .page-title h1 {
-        font-size: 80px;
-    }
-
-        .page-title p {
-        font-size: 15px;
-    }
-
-    #never-email {
-        width: 80px;
-    }
-
-    .never-subscribe-button {
-        margin-top: 10px;
-        margin-left: 0;
-    }
-
-    .nevermiss-text {
-        font-size: 7vw;
-    }
-
-}*/
-
-    /*@media only screen and (max-width: 1024px) {
-        .never-subscribe-button {
-        margin-top: 10px;
-        margin-left: 10px;
-    }
-    }*/
