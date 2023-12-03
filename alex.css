@@ -62,7 +62,7 @@ nav {
 }
 
 .never-subscribe {
-    margin-left: 30px;
+    margin-left: 50px;
     margin-bottom: 10px;
 }
 
@@ -86,6 +86,7 @@ nav {
     border: none;
     height: 50px;
     padding: 10px 20px;
+    margin-left: 10px;
 }
 
 .never-subscribe-button:hover {
@@ -123,8 +124,13 @@ nav {
     text-transform: capitalize;
 }
 
+.card-text {
+    padding-top: 10px;
+}
+
 .alex-card-bottom {
     border-top: 1px solid rgba(128, 128, 128, 0.626);
+    margin-top: 100px;
 }
 
 .alex-card-likes {
@@ -162,7 +168,7 @@ nav {
 }
 
 /* Media queries*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 375px) {
     .page-title h1 {
         font-size: 50px;
     }
@@ -216,4 +222,42 @@ nav {
         margin-right: 5px;
     }
 
+    .alex-card-bottom {
+        margin-top: 0px;
+    }
+
 }
+
+@media only screen and (max-width: 425px) {
+    .left-blog-post {
+        margin: 30px 10%;
+        display: grid;
+        grid-template-rows: 40% 60%;
+        grid-template-columns: none;
+        width: 250px;
+    }
+
+    .page-title h1 {
+        font-size: 80px;
+    }
+
+        .page-title p {
+        font-size: 15px;
+    }
+
+    #never-email {
+        width: 80px;
+    }
+
+    .never-subscribe-button {
+        margin-top: 10px;
+    }
+
+}
+
+    @media only screen and (max-width: 1024px) {
+        .never-subscribe-button {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    }
