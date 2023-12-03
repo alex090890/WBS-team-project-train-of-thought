@@ -10,9 +10,20 @@
       href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700;900&family=Roboto:wght@100;200;300;400;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="anna.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <ul class="worknav">
@@ -26,6 +37,175 @@
         <a class="wbsNav__link wbs--current-link" href="./alex.html">Alex</a>
       </li>
     </ul>
+    <!---- nav----->
+    <nav class="wbsNav-section">
+      <div class="wbsNav-container__desktop">
+        <ul class="wbsNav-list">
+          <li class="wbsNav-item">
+            <a class="wbsNav-link wbsCurrent-link" href="">Home</a>
+          </li>
+          <li class="wbsNav-item"><a class="wbsNav-link" href="">About</a></li>
+          <li class="wbsNav-item">
+            <a class="wbsNav-link" href="">My Blog</a>
+          </li>
+          <li class="wbsNav-item">
+            <a class="wbsNav-link" href="">Contact</a>
+          </li>
+          <li class="wbsNav-item wbsNav-item__form">
+            <form class="wbsNav-form">
+              <input class="wbsNav-input" type="text" placeholder="Search..." />
+              <svg class="wbsNav-icon" width="18" height="18">
+                <use href="./assets/images/anna/icons.svg#icon-search"></use>
+              </svg>
+            </form>
+          </li>
+          <li class="wbsNav-item wbsNav-item__soc">
+            <ul class="wbsSoc-list">
+              <li class="wbsSoc-item__nav">
+                <a href="">
+                  <svg class="wbsSoc-list__icon" width="20" height="20">
+                    <use
+                      href="./assets/images/anna/icons.svg#icon-facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="wbsSoc-item__nav">
+                <a href="">
+                  <svg class="wbsSoc-list__icon" width="20" height="20">
+                    <use
+                      href="./assets/images/anna/icons.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="wbsSoc-item__nav">
+                <a href="">
+                  <svg class="wbsSoc-list__icon" width="20" height="20">
+                    <use
+                      href="./assets/images/anna/icons.svg#icon-twitter"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="wbsSoc-item_nav">
+                <a href="">
+                  <svg class="wbsSoc-list__icon" width="20" height="20">
+                    <use
+                      href="./assets/images/anna/icons.svg#icon-pinterest2"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="wbsNav-section__mobile">
+      <div class="wbsNav-container__mobile">
+        <form class="wbsForm__mobile">
+          <input
+            class="wbsNav-input wbsNav-input__mobile"
+            type="text"
+            placeholder="Search..."
+          />
+          <svg class="wbsNav-icon wbsNav-icon__mobile" width="18" height="18">
+            <use href="./assets/images/anna/icons.svg#icon-search"></use>
+          </svg>
+        </form>
+        <!-- btn-primary btn -->
+        <button
+          class="wbsNav-btn__mobile"
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          <svg class="wbsNav-icon__open" width="40" height="40">
+            <use
+              href="./assets/images/anna/icons.svg#icon-menu_open_40px"
+            ></use>
+          </svg>
+        </button>
+      </div>
+      <!-- Modal !!!!!-->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <ul class="wbsNav-list__mob">
+                <li class="wbsNav-item__mob">
+                  <a class="wbsNav-link wbsCurrent-link" href="">Home</a>
+                </li>
+                <li class="wbsNav-item__mob">
+                  <a class="wbsNav-link" href="">About</a>
+                </li>
+                <li class="wbsNav-item__mob">
+                  <a class="wbsNav-link" href="">My Blog</a>
+                </li>
+                <li class="wbsNav-item__mob">
+                  <a class="wbsNav-link" href="">Contact</a>
+                </li>
+              </ul>
+              <ul class="wbsSoc-list">
+                <li class="wbsSoc-item__nav">
+                  <a href="">
+                    <svg class="wbsSoc-list__icon" width="20" height="20">
+                      <use
+                        href="./assets/images/anna/icons.svg#icon-facebook"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="wbsSoc-item__nav">
+                  <a href="">
+                    <svg class="wbsSoc-list__icon" width="20" height="20">
+                      <use
+                        href="./assets/images/anna/icons.svg#icon-instagram"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="wbsSoc-item__nav">
+                  <a href="">
+                    <svg class="wbsSoc-list__icon" width="20" height="20">
+                      <use
+                        href="./assets/images/anna/icons.svg#icon-twitter"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="wbsSoc-item_nav">
+                  <a href="">
+                    <svg class="wbsSoc-list__icon" width="20" height="20">
+                      <use
+                        href="./assets/images/anna/icons.svg#icon-pinterest2"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of Modal !!!!!-->
+    </nav>
+
     <!-- Hero -->
     <section class="wbsHero">
       <div class="wbsHero-container">
@@ -87,147 +267,164 @@
 
               <ul class="wbsFollow-list">
                 <li class="wbsFollow-item">
-                    <a class="wbsFollow-link" href=""> 
-                        <div class="wbsFollow-wrp">
-                            <img
-                    class="wbsFollow-img"
-                    src="./assets/images/anna/01.jpg"
-                    alt=""
-                  />
-                  <div class="wbsFollow-overlay">
-                    <p class="wbsFollow__wrap-text">
-                     @wix: #wix, #website, #freewebsite...
-                    </p>
-                  </div>
-                        </div>
-                    </a>
-                 
+                  <a class="wbsFollow-link" href="">
+                    <div class="wbsFollow-wrp">
+                      <img
+                        class="wbsFollow-img"
+                        src="./assets/images/anna/01.jpg"
+                        alt=""
+                      />
+                      <div class="wbsFollow-overlay">
+                        <p class="wbsFollow__wrap-text">
+                          @wix: #wix, #website, #freewebsite...
+                        </p>
+                      </div>
+                    </div>
+                  </a>
                 </li>
-                <li class="wbsFollow-item"><a class="wbsFollow-link" href=""> 
-                        <div class="wbsFollow-wrp">
-                  <img
-                    class="wbsFollow-img"
-                    src="./assets/images/anna/02.jpg"
-                    alt=""
-                  /> <div class="wbsFollow-overlay">
-                    <p class="wbsFollow__wrap-text">
-                     @wix: #wix, #website, #freewebsite...
-                    </p>
-                  </div>
-                        </div>
-                    </a>
+                <li class="wbsFollow-item">
+                  <a class="wbsFollow-link" href="">
+                    <div class="wbsFollow-wrp">
+                      <img
+                        class="wbsFollow-img"
+                        src="./assets/images/anna/02.jpg"
+                        alt=""
+                      />
+                      <div class="wbsFollow-overlay">
+                        <p class="wbsFollow__wrap-text">
+                          @wix: #wix, #website, #freewebsite...
+                        </p>
+                      </div>
+                    </div>
+                  </a>
                 </li>
-                <li class="wbsFollow-item"><a class="wbsFollow-link" href=""> 
-                        <div class="wbsFollow-wrp">
-                  <img
-                    class="wbsFollow-img"
-                    src="./assets/images/anna/03.jpg"
-                    alt=""
-                  /> <div class="wbsFollow-overlay">
-                    <p class="wbsFollow__wrap-text">
-                     @wix: #wix, #website, #freewebsite...
-                    </p>
-                  </div>
-                        </div>
-                    </a>
+                <li class="wbsFollow-item">
+                  <a class="wbsFollow-link" href="">
+                    <div class="wbsFollow-wrp">
+                      <img
+                        class="wbsFollow-img"
+                        src="./assets/images/anna/03.jpg"
+                        alt=""
+                      />
+                      <div class="wbsFollow-overlay">
+                        <p class="wbsFollow__wrap-text">
+                          @wix: #wix, #website, #freewebsite...
+                        </p>
+                      </div>
+                    </div>
+                  </a>
                 </li>
-                <li class="wbsFollow-item"><a class="wbsFollow-link" href=""> 
-                        <div class="wbsFollow-wrp">
-                  <img
-                    class="wbsFollow-img"
-                    src="./assets/images/anna/04.jpg"
-                    alt=""
-                  /> <div class="wbsFollow-overlay">
-                    <p class="wbsFollow__wrap-text">
-                     @wix: #wix, #website, #freewebsite...
-                    </p>
-                  </div>
-                        </div>
-                    </a>
+                <li class="wbsFollow-item">
+                  <a class="wbsFollow-link" href="">
+                    <div class="wbsFollow-wrp">
+                      <img
+                        class="wbsFollow-img"
+                        src="./assets/images/anna/04.jpg"
+                        alt=""
+                      />
+                      <div class="wbsFollow-overlay">
+                        <p class="wbsFollow__wrap-text">
+                          @wix: #wix, #website, #freewebsite...
+                        </p>
+                      </div>
+                    </div>
+                  </a>
                 </li>
-                <li class="wbsFollow-item"><a class="wbsFollow-link" href=""> 
-                        <div class="wbsFollow-wrp">
-                  <img
-                    class="wbsFollow-img"
-                    src="./assets/images/anna/05.jpg"
-                    alt=""
-                  /> <div class="wbsFollow-overlay">
-                    <p class="wbsFollow__wrap-text">
-                     @wix: #wix, #website, #freewebsite...
-                    </p>
-                  </div>
-                        </div>
-                    </a>
+                <li class="wbsFollow-item">
+                  <a class="wbsFollow-link" href="">
+                    <div class="wbsFollow-wrp">
+                      <img
+                        class="wbsFollow-img"
+                        src="./assets/images/anna/05.jpg"
+                        alt=""
+                      />
+                      <div class="wbsFollow-overlay">
+                        <p class="wbsFollow__wrap-text">
+                          @wix: #wix, #website, #freewebsite...
+                        </p>
+                      </div>
+                    </div>
+                  </a>
                 </li>
-                <li class="wbsFollow-item"><a class="wbsFollow-link" href=""> 
-                        <div class="wbsFollow-wrp">
-                  <img
-                    class="wbsFollow-img"
-                    src="./assets/images/anna/06.jpg"
-                    alt=""
-                  /> <div class="wbsFollow-overlay">
-                    <p class="wbsFollow__wrap-text">
-                     @wix: #wix, #website, #freewebsite...
-                    </p>
-                  </div>
-                        </div>
-                    </a>
+                <li class="wbsFollow-item">
+                  <a class="wbsFollow-link" href="">
+                    <div class="wbsFollow-wrp">
+                      <img
+                        class="wbsFollow-img"
+                        src="./assets/images/anna/06.jpg"
+                        alt=""
+                      />
+                      <div class="wbsFollow-overlay">
+                        <p class="wbsFollow__wrap-text">
+                          @wix: #wix, #website, #freewebsite...
+                        </p>
+                      </div>
+                    </div>
+                  </a>
                 </li>
-                <li class="wbsFollow-item"><a class="wbsFollow-link" href=""> 
-                        <div class="wbsFollow-wrp">
-                  <img
-                    class="wbsFollow-img"
-                    src="./assets/images/anna/07.jpg"
-                    alt=""
-                  /> <div class="wbsFollow-overlay">
-                    <p class="wbsFollow__wrap-text">
-                     @wix: #wix, #website, #freewebsite...
-                    </p>
-                  </div>
-                        </div>
-                    </a>
+                <li class="wbsFollow-item">
+                  <a class="wbsFollow-link" href="">
+                    <div class="wbsFollow-wrp">
+                      <img
+                        class="wbsFollow-img"
+                        src="./assets/images/anna/07.jpg"
+                        alt=""
+                      />
+                      <div class="wbsFollow-overlay">
+                        <p class="wbsFollow__wrap-text">
+                          @wix: #wix, #website, #freewebsite...
+                        </p>
+                      </div>
+                    </div>
+                  </a>
                 </li>
-                <li class="wbsFollow-item"><a class="wbsFollow-link" href=""> 
-                        <div class="wbsFollow-wrp">
-                  <img
-                    class="wbsFollow-img"
-                    src="./assets/images/anna/08.jpg"
-                    alt=""
-                  /> <div class="wbsFollow-overlay">
-                    <p class="wbsFollow__wrap-text">
-                     @wix: #wix, #website, #freewebsite...
-                    </p>
-                  </div>
-                        </div>
-                    </a>
+                <li class="wbsFollow-item">
+                  <a class="wbsFollow-link" href="">
+                    <div class="wbsFollow-wrp">
+                      <img
+                        class="wbsFollow-img"
+                        src="./assets/images/anna/08.jpg"
+                        alt=""
+                      />
+                      <div class="wbsFollow-overlay">
+                        <p class="wbsFollow__wrap-text">
+                          @wix: #wix, #website, #freewebsite...
+                        </p>
+                      </div>
+                    </div>
+                  </a>
                 </li>
-                <li class="wbsFollow-item"><a class="wbsFollow-link" href=""> 
-                        <div class="wbsFollow-wrp">
-                  <img
-                    class="wbsFollow-img"
-                    src="./assets/images/anna/09.jpg"
-                    alt=""
-                  /> <div class="wbsFollow-overlay">
-                    <p class="wbsFollow__wrap-text">
-                     @wix: #wix, #website, #freewebsite...
-                    </p>
-                  </div>
-                        </div>
-                    </a>
+                <li class="wbsFollow-item">
+                  <a class="wbsFollow-link" href="">
+                    <div class="wbsFollow-wrp">
+                      <img
+                        class="wbsFollow-img"
+                        src="./assets/images/anna/09.jpg"
+                        alt=""
+                      />
+                      <div class="wbsFollow-overlay">
+                        <p class="wbsFollow__wrap-text">
+                          @wix: #wix, #website, #freewebsite...
+                        </p>
+                      </div>
+                    </div>
+                  </a>
                 </li>
-                <li class="wbsFollow-item"><a class="wbsFollow-link" href=""> 
-                        <div class="wbsFollow-wrp">
-                  <img
-                    class="wbsFollow-img"
-                    src="./assets/images/anna/10.jpg"
-                    alt=""
-                  /> <div class="wbsFollow-overlay">
-                    <p class="wbsFollow__wrap-text">
-                     @wix: #wix, #website, #freewebsite...
-                    </p>
-                  </div>
-                        </div>
-                    </a>
+                <li class="wbsFollow-item">
+                  <a class="wbsFollow-link" href="">
+                    <div class="wbsFollow-wrp">
+                      <img
+                        class="wbsFollow-img"
+                        src="./assets/images/anna/10.jpg"
+                        alt=""
+                      />
+                      <div class="wbsFollow-overlay">
+                        <p class="wbsFollow__wrap-text">
+                          @wix: #wix, #website, #freewebsite...
+                        </p>
+                      </div>
+                    </div>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -274,12 +471,21 @@
             <div class="wbsMain-aside__subscribe aside-section">
               <h2 class="wbsSubscribe-title aside-title">SUBSCRIBE</h2>
               <form class="wbsSubscribe-form">
-                <label class="wbsSubscribe-label" for="email-sbscr">Enter your email&nbsp;&nbsp&#8432</label>
-                <input class="wbsSubscribe-input" type="email"placeholder="email" required id="email-sbscr" name="email-sbscr"/>
-            <button class="wbsForm-btn wbsSubscribe-btn">Subscribe</button>  
-            </form>
+                <label class="wbsSubscribe-label" for="email-sbscr"
+                  >Enter your email&nbsp;&nbsp;&#8432;</label
+                >
+                <input
+                  class="wbsSubscribe-input"
+                  type="email"
+                  placeholder="email"
+                  required
+                  id="email-sbscr"
+                  name="email-sbscr"
+                />
+                <button class="wbsForm-btn wbsSubscribe-btn">Subscribe</button>
+              </form>
             </div>
-             <div class="wbsMain-aside__pick aside-section">
+            <div class="wbsMain-aside__pick aside-section">
               <h2 class="wbsAbout-title aside-title">MY PICK OF THE MONTH</h2>
               <img
                 class="wbsAbout-img"
@@ -294,7 +500,6 @@
                   place for you to tell a story and let your users know a little
                   more about you.
                 </p>
-                
               </div>
             </div>
           </div>
@@ -337,7 +542,7 @@
 
           <div class="wbsForm-row row-email">
             <label class="wbsForm-label" for="email"
-              >Email&nbsp;&nbsp&#8432;</label
+              >Email&nbsp;&nbsp;&#8432;</label
             >
             <input
               class="wbsForm-input row-email"
@@ -361,11 +566,13 @@
       </div>
     </section>
     <!-- End of the Dowm Form -->
+
     <footer class="wbsFooter">
-        <div class="wbsFooter-inner"><p class="wbsForm-text">
-        © 2035 by Train of Thoughts. Powered and secured by Wix
-      </p></div>
-      
+      <div class="wbsFooter-inner">
+        <p class="wbsForm-text">
+          © 2035 by Train of Thoughts. Powered and secured by Wix
+        </p>
+      </div>
     </footer>
   </body>
 </html>
