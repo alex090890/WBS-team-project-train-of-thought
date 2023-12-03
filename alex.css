@@ -152,7 +152,7 @@ nav {
 
 .left-blog-post {
     width: 500px;
-    height: 30vw;
+    height:px;
     border: 1px solid black;
     margin: 30px auto;
     display: grid;
@@ -205,6 +205,7 @@ nav {
         grid-template-rows: 40% 60%;
         grid-template-columns: none;
         width: 250px;
+        height: 400px;
     }
 
     .alex-card-body {
