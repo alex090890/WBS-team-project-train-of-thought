@@ -76,7 +76,7 @@ nav {
     border-left: none;
     border-top: none;
     border-right: none;
-    width: 50vw;
+    width: 30vw;
     margin-top:0%;
 }
 
@@ -85,7 +85,7 @@ nav {
     color: white;
     border: none;
     height: 50px;
-    padding: 10px 20px;
+    padding: 10px auto;
     margin-left: 10px;
     margin-top: 10px;
 }
@@ -123,6 +123,7 @@ nav {
 
 .card-title {
     text-transform: capitalize;
+    font-weight: bold;
 }
 
 .card-text {
@@ -149,10 +150,12 @@ nav {
     font-size: 13px;
  }
 
+ .left-more-posts {
+    border: none;
+ }
 
 .left-blog-post {
-    width: 500px;
-    height:px;
+    width: 600px;
     border: 1px solid black;
     margin: 30px auto;
     display: grid;
@@ -161,12 +164,16 @@ nav {
 
 .left-blog-image {
     height: 100%;
-    background-image: url('./assets-alex/c22c23_56862fbf994d49a3a136f14547e6194c~mv2_d_1920_1342_s_2.webp');
     background-position: center;
     background-origin:content-box;
     background-repeat: no-repeat;
     background-size:cover;
 }
+
+.left-blog-image:hover {
+    cursor: pointer;
+}
+
 
 /* Media queries*/
 @media only screen and (max-width: 500px) {
