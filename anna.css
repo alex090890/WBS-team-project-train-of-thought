@@ -412,6 +412,129 @@
     grid-template-columns: 2fr 1fr;
   }
 }
+/* --- aside section Alex--- */
+.alex-div-title {
+  margin-top: 50px;
+}
+.alex-card-body {
+  font-size: 15px;
+  padding: 20px;
+  @media screen and (min-width: 1200px) {
+    /* margin: 20px; */
+  }
+}
+/* .alex-card-body h5 {
+  font-size: 16px;
+} */
+
+.alex-dot {
+  width: 3px;
+  height: 3px;
+  align-items: center;
+  align-self: center;
+  background-color: black;
+  display: inline-block;
+  margin-bottom: 3px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.publish-date {
+  font-size: 12px;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.card-text {
+  margin-bottom: 0px;
+  font-size: 1rem;
+  @media screen and (min-width: 1200px) {
+    padding-top: 10px;
+  }
+}
+
+.alex-card-bottom {
+  padding-top: 1rem;
+  margin-top: 0px;
+  border-top: 1px solid rgba(128, 128, 128, 0.626);
+  @media screen and (min-width: 1200px) {
+    margin-top: 100px;
+  }
+}
+
+.alex-card-likes {
+  float: right;
+}
+
+.alex-card-likes img {
+  display: inline-block;
+}
+
+.alex-card-views {
+  margin-right: 5px;
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 13px;
+  }
+}
+
+.alex-card-comments:hover {
+  color: blue !important;
+}
+
+.left-more-posts {
+  border: none;
+  background-color: rgb(102, 0, 234);
+  color: white;
+  display: block;
+  margin: 10px auto;
+  padding: 10px 40px;
+}
+
+.left-blog-post {
+  margin: 30px auto;
+  display: grid;
+  grid-template-rows: 40% 60%;
+  border: 1px solid black;
+
+  /* width: 250px;
+  height: 400px; */
+  @media screen and (min-width: 1200px) {
+    width: 600px;
+
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: none;
+  }
+}
+
+.left-blog-image {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.left-blog-image:hover {
+  cursor: pointer;
+}
+
+.left-card-link {
+  color: black;
+  text-decoration: none;
+}
+
+.left-card-link:hover {
+  color: blue;
+}
 /* --- aside section --- */
 .wbsMain-aside {
   font-family: "Roboto";
