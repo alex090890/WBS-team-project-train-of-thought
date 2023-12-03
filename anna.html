@@ -17,7 +17,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="index.css" />
+    <!-- <link rel="stylesheet" href="index.css" /> -->
     <link rel="stylesheet" href="anna.css" />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -38,129 +38,40 @@
       </li>
     </ul>
     <!---- nav----->
-    <nav class="wbsNav-section">
-      <div class="wbsNav-container__desktop">
-        <ul class="wbsNav-list">
-          <li class="wbsNav-item">
-            <a class="wbsNav-link wbsCurrent-link" href="">Home</a>
-          </li>
-          <li class="wbsNav-item"><a class="wbsNav-link" href="">About</a></li>
-          <li class="wbsNav-item">
-            <a class="wbsNav-link" href="">My Blog</a>
-          </li>
-          <li class="wbsNav-item">
-            <a class="wbsNav-link" href="">Contact</a>
-          </li>
-          <li class="wbsNav-item wbsNav-item__form">
-            <form class="wbsNav-form">
-              <input class="wbsNav-input" type="text" placeholder="Search..." />
-              <svg class="wbsNav-icon" width="18" height="18">
-                <use href="./assets/images/anna/icons.svg#icon-search"></use>
-              </svg>
-            </form>
-          </li>
-          <li class="wbsNav-item wbsNav-item__soc">
-            <ul class="wbsSoc-list">
-              <li class="wbsSoc-item__nav">
-                <a href="">
-                  <svg class="wbsSoc-list__icon" width="20" height="20">
-                    <use
-                      href="./assets/images/anna/icons.svg#icon-facebook"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="wbsSoc-item__nav">
-                <a href="">
-                  <svg class="wbsSoc-list__icon" width="20" height="20">
-                    <use
-                      href="./assets/images/anna/icons.svg#icon-instagram"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="wbsSoc-item__nav">
-                <a href="">
-                  <svg class="wbsSoc-list__icon" width="20" height="20">
-                    <use
-                      href="./assets/images/anna/icons.svg#icon-twitter"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="wbsSoc-item_nav">
-                <a href="">
-                  <svg class="wbsSoc-list__icon" width="20" height="20">
-                    <use
-                      href="./assets/images/anna/icons.svg#icon-pinterest2"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+    <header class="wbsHeader-combine">
+      <!--Hero image-->
+      <div class="page-title">
+        <p>EVERYTHING IS PERSONAL. INCLUDING THIS BLOG.</p>
+        <h1>Train of Thought</h1>
       </div>
-    </nav>
-    <nav class="wbsNav-section__mobile">
-      <div class="wbsNav-container__mobile">
-        <form class="wbsForm__mobile">
-          <input
-            class="wbsNav-input wbsNav-input__mobile"
-            type="text"
-            placeholder="Search..."
-          />
-          <svg class="wbsNav-icon wbsNav-icon__mobile" width="18" height="18">
-            <use href="./assets/images/anna/icons.svg#icon-search"></use>
-          </svg>
-        </form>
-        <!-- btn-primary btn -->
-        <button
-          class="wbsNav-btn__mobile"
-          type="button"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-        >
-          <svg class="wbsNav-icon__open" width="40" height="40">
-            <use
-              href="./assets/images/anna/icons.svg#icon-menu_open_40px"
-            ></use>
-          </svg>
-        </button>
-      </div>
-      <!-- Modal !!!!!-->
-      <div
-        class="modal fade"
-        id="exampleModal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <ul class="wbsNav-list__mob">
-                <li class="wbsNav-item__mob">
-                  <a class="wbsNav-link wbsCurrent-link" href="">Home</a>
-                </li>
-                <li class="wbsNav-item__mob">
-                  <a class="wbsNav-link" href="">About</a>
-                </li>
-                <li class="wbsNav-item__mob">
-                  <a class="wbsNav-link" href="">My Blog</a>
-                </li>
-                <li class="wbsNav-item__mob">
-                  <a class="wbsNav-link" href="">Contact</a>
-                </li>
-              </ul>
+      <nav class="wbsNav-section">
+        <div class="wbsNav-container__desktop">
+          <ul class="wbsNav-list">
+            <li class="wbsNav-item">
+              <a class="wbsNav-link wbsCurrent-link" href="">Home</a>
+            </li>
+            <li class="wbsNav-item">
+              <a class="wbsNav-link" href="">About</a>
+            </li>
+            <li class="wbsNav-item">
+              <a class="wbsNav-link" href="">My Blog</a>
+            </li>
+            <li class="wbsNav-item">
+              <a class="wbsNav-link" href="">Contact</a>
+            </li>
+            <li class="wbsNav-item wbsNav-item__form">
+              <form class="wbsNav-form">
+                <input
+                  class="wbsNav-input"
+                  type="text"
+                  placeholder="Search..."
+                />
+                <svg class="wbsNav-icon" width="18" height="18">
+                  <use href="./assets/images/anna/icons.svg#icon-search"></use>
+                </svg>
+              </form>
+            </li>
+            <li class="wbsNav-item wbsNav-item__soc">
               <ul class="wbsSoc-list">
                 <li class="wbsSoc-item__nav">
                   <a href="">
@@ -199,12 +110,114 @@
                   </a>
                 </li>
               </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="wbsNav-section__mobile">
+        <div class="wbsNav-container__mobile">
+          <form class="wbsForm__mobile">
+            <input
+              class="wbsNav-input wbsNav-input__mobile"
+              type="text"
+              placeholder="Search..."
+            />
+            <svg class="wbsNav-icon wbsNav-icon__mobile" width="18" height="18">
+              <use href="./assets/images/anna/icons.svg#icon-search"></use>
+            </svg>
+          </form>
+          <!-- btn-primary btn -->
+          <button
+            class="wbsNav-btn__mobile"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            <svg class="wbsNav-icon__open" width="40" height="40">
+              <use
+                href="./assets/images/anna/icons.svg#icon-menu_open_40px"
+              ></use>
+            </svg>
+          </button>
+        </div>
+        <!-- Modal !!!!!-->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <ul class="wbsNav-list__mob">
+                  <li class="wbsNav-item__mob">
+                    <a class="wbsNav-link wbsCurrent-link" href="">Home</a>
+                  </li>
+                  <li class="wbsNav-item__mob">
+                    <a class="wbsNav-link" href="">About</a>
+                  </li>
+                  <li class="wbsNav-item__mob">
+                    <a class="wbsNav-link" href="">My Blog</a>
+                  </li>
+                  <li class="wbsNav-item__mob">
+                    <a class="wbsNav-link" href="">Contact</a>
+                  </li>
+                </ul>
+                <ul class="wbsSoc-list">
+                  <li class="wbsSoc-item__nav">
+                    <a href="">
+                      <svg class="wbsSoc-list__icon" width="20" height="20">
+                        <use
+                          href="./assets/images/anna/icons.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="wbsSoc-item__nav">
+                    <a href="">
+                      <svg class="wbsSoc-list__icon" width="20" height="20">
+                        <use
+                          href="./assets/images/anna/icons.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="wbsSoc-item__nav">
+                    <a href="">
+                      <svg class="wbsSoc-list__icon" width="20" height="20">
+                        <use
+                          href="./assets/images/anna/icons.svg#icon-twitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="wbsSoc-item_nav">
+                    <a href="">
+                      <svg class="wbsSoc-list__icon" width="20" height="20">
+                        <use
+                          href="./assets/images/anna/icons.svg#icon-pinterest2"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- end of Modal !!!!!-->
-    </nav>
+        <!-- end of Modal !!!!!-->
+      </nav>
+    </header>
 
     <!-- Hero -->
     <section class="wbsHero">
@@ -238,6 +251,31 @@
       </div>
     </section>
     <!-- end of Hero -->
+    <!--Never miss a new post Alex-->
+    <div class="never-section">
+      <div class="never">
+        <div class="nevermiss">
+          <p class="nevermiss-text">Never Miss a New Post.</p>
+        </div>
+        <form class="never-subscribe">
+          <fieldset>
+            <legend class="never-legend">Enter your email *</legend>
+            <div class="never-flex">
+              <input
+                type="email"
+                name="never-email"
+                id="never-email"
+                required
+              />
+              <button class="never-subscribe-button" type="submit">
+                Subscribe
+              </button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+
     <!-- grid section -->
     <section class="wbsMain-section">
       <div class="wbsMain-container">
