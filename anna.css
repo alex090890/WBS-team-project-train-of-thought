@@ -647,6 +647,13 @@
 }
 
 .wbsSubscribe-form {
+  @media screen and (min-width: 500px) {
+    width: 260px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+  }
 }
 .wbsSubscribe-label {
   font-weight: 300;
